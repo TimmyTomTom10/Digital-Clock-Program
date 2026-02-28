@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="icon" type="image/png" href="clock-regular-full.svg">
+    <script src="https://kit.fontawesome.com/4c3da5b080.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="app">
+        <div id="stopwatch-container">
+            <div id="stopwatch">00:00:00</div>
+            <div id="stopwatch-settings">
+                <button id="start" class="stopwatch-buttons">Start</button>
+                <button id="lap" class="stopwatch-buttons">Lap</button>
+                <button id="stop" class="stopwatch-buttons">Stop</button>
+                <button id="resume" class="stopwatch-buttons">Resume</button>
+                <button id="reset" class="stopwatch-buttons">Reset</button>
+
+            </div>
+        </div>
+        <div id="change-settings-container">
+                <a href="digitalclock.html" id="change-to-digital-clock">Digital Clock</a>
+                <a href="stopwatch.html" id="change-to-stopwatch">Stopwatch</a>
+                <a href="timer.html" id="change-to-timer">Timer</a>
+        </div>
+            <table id="lap-table" border="2">
+                <tr class="lap-row" id="table-header">
+                    <p width="100">Lap</th> 
+                    <th width="100">Lap Times</th>
+                    <th width="100">Overall Time</th>
+                </tr>
+                
+            </table>
+    </div>
+    
+        
+    
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>

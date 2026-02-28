@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="digitalclock.css">
+    <link rel="icon" type="image/png" href="clock-regular-full.svg">
+    <script src="https://kit.fontawesome.com/4c3da5b080.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="app">
+        <div id="clock-container">
+
+                <span id="currentDate"></span>
+
+            <span id="clock">00:00:00</span>
+            <div id="clock-settings">
+                <button id="openBtnSetClock">Set Clock</button>
+                    <dialog id="popupSetClock">
+                        <form method="dialog" class="popup-form">
+                            <h2>Set Clock</h2>
+
+                            <div class="time">
+                                <input type="datetime-local" id="dateSetterSetClock" required>
+                            </div>
+                            
+
+                            <div class="popup-buttons">
+                                <button type="submit" id="submitSetClock">Submit</button>
+                                <button type="button" id="closeBtnSetClock">Cancel</button>
+                            </div>
+                        </form>
+                </dialog>
+
+
+
+                <button id="openBtnSetAlarm">Set Alarm</button>
+                    <dialog id="popupSetAlarm">
+                        <form method="dialog" class="popup-form">
+                            <h2>Set Alarm</h2>
+
+                            <div class="time">
+                                <input type="datetime-local" id="dateSetterSetAlarm" required>
+                            </div>
+                            
+
+                            <div class="popup-buttons">
+                                <button type="submit" id="submitSetAlarm">Submit</button>
+                                <button type="button" id="closeBtnSetAlarm">Cancel</button>
+                            </div>
+                        </form>
+                </dialog>
+                <button id="syncTime">Sync Time</button>
+            </div>
+        </div>
+        <div id="change-settings-container">
+                <a href="digitalclock.html" id="change-to-digital-clock">Digital Clock</a>
+                <a href="stopwatch.html" id="change-to-stopwatch">Stopwatch</a>
+                <a href="timer.html" id="change-to-timer">Timer</a>
+        </div>
+        <div id="alarmList">
+            <span id="newAlarm"></span>
+        </div>
+    </div>
+    
+        
+    
+
+    <script src="digitalclock.js"></script>
+</body>
+</html>

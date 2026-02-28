@@ -1,0 +1,158 @@
+body{
+
+    background-image: url(journeyss.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#timer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(100, 100, 255);
+    text-align: center;
+
+    
+  width: clamp(250px, 70vw, 1000px);
+  min-height: clamp(200px, 40vh, 500px);
+  padding: 2vh 2vw;
+  border-radius: clamp(20px, 2vw, 30px);
+  border: clamp(3px, 0.5vw, 8px) solid rgb(100, 100, 255);;
+
+}
+#timer-settings{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vh;
+
+}
+#timer{
+    font-family: monospace;
+    width: clamp(250px, 70vw, 1000px);
+    height: clamp(100px, 15vh, 400px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#change-settings-container{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;              /* spacing scales */
+    flex-wrap: wrap; 
+}
+#timer-settings button{
+    font-family: monospace;
+    padding: clamp(2px, .5vw, 10px) clamp(10px, 1vw, 20px);
+
+    font-size: clamp(0.5rem, 2vw, 1rem);
+
+    border-radius: clamp(6px, 1vw, 20px);
+    border: clamp(2px, 0.3vw, 5px) solid rgb(176, 176, 255);
+    background-color: rgb(227, 227, 255);
+}
+#timer-settings button:hover{
+    cursor: pointer;
+    background-color: rgb(218, 218, 255);
+}
+#timer-settings button:active{
+    border: clamp(2px, 0.3vw, 5px) solid rgb(218, 218, 255);
+    background-color: rgb(208, 208, 255);
+}
+.app{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  gap: 2vh; /* proportional spacing */
+}
+#change-settings-container a{
+    font-family: monospace;
+    padding: clamp(5px, 1.2vw, 20px) clamp(14px, 2vw, 40px);
+
+    font-size: clamp(0.9rem, 1.5vw, 1.8rem);
+
+    border-radius: clamp(6px, 1vw, 20px);
+    text-decoration: none;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#change-to-timer{
+    background-color: rgb(208, 208, 255);
+    border: clamp(3px, 0.3vw, 5px) inset rgb(218, 218, 255);
+    cursor: pointer;
+}
+#change-to-stopwatch{
+    background-color: rgb(227, 227, 255);
+    border: clamp(3px, 0.3vw, 5px) solid rgb(176, 176, 255);
+}
+#change-to-digital-clock{
+    background-color: rgb(227, 227, 255);
+    border: clamp(3px, 0.3vw, 5px) solid rgb(176, 176, 255);
+}
+#change-to-stopwatch:hover{
+    cursor: pointer;
+    background-color: rgb(218, 218, 255);
+}
+#change-to-digital-clock:hover{
+    cursor: pointer;
+    background-color: rgb(218, 218, 255);
+}
+#change-settings-container a:active{
+    border: clamp(3px, 0.3vw, 5px) inset rgb(218, 218, 255);
+    background-color: rgb(208, 208, 255);
+}
+.timer-inputs{
+    font-size: clamp(3rem, 10vw, 12rem);
+    width: 2ch;
+    border: none;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    padding: none;
+    font-family: monospace;
+    
+
+}
+.timer-separator{
+    padding: 0;
+    font-size: clamp(3rem, 10vw, 12rem);
+    margin: 0;
+    line-height: 1;      
+    display: flex;       
+    align-items: center;
+    font-size: clamp(3rem, 10vw, 12rem);
+}
+#seconds{
+    padding: 0;
+}
+#minutes{
+    padding: 0;
+}
+#hours{
+    padding: 0;
+}
+input::placeholder{
+  color: black;
+    font-family: monospace;
+}
+
+
+#set-timer.active{
+    border:solid rgb(218, 218, 255);
+    background-color: rgb(208, 208, 255);
+}
